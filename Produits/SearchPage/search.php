@@ -25,37 +25,36 @@ $conn = mysqli_connect('localhost', 'root', '', 'projet-ecomm'); ?>
                     <a href="#" class="electro">Eléctronique</a>
 
                     <ul class="electro-show">
-                        <li><a href="categorie.php?sel=<?php echo "Telephone" ?>">Téléphone</a></li>
-                        <li><a href="categorie.php?sel=<?php echo "Ordinateur" ?>">Ordinateur</a></li>
-                        <li><a href="categorie.php?sel=<?php echo "Smart Watch" ?>">Smart Watch</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Telephone" ?>">Téléphone</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Ordinateur" ?>">Ordinateur</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Smart Watch" ?>">Smart Watch</a></li>
                     </ul>
                     <!--  <div id="barre"></div> -->
                     <a href="#" class="maison">Vêtements</a>
                     <ul class="maison-show">
-                        <li><a href="categorie.php?sel=<?php echo "Pantalon" ?>">Pantalons</a></li>
-                        <li><a href="categorie.php?sel=<?php echo "Chemises" ?>">Chemises</a></li>
-                        <li><a href="categorie.php?sel=<?php echo "Chaussures" ?>">Chaussures</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Pantalon" ?>">Pantalons</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Chemises" ?>">Chemises</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Chaussures" ?>">Chaussures</a></li>
                     </ul>
 
                     <!--    <div id="barre"></div>-->
                     <a href="#" class="vetement">Beauté & Santé</a>
                     <ul class="vetement-show">
-                        <li><a href="categorie.php?sel=<?php echo "Beaute&Parfums" ?>">Beauté & Parfums</a></li>
-                        <li><a href="categorie.php?sel=<?php echo "Santé&Premiers Soins" ?>">Santé & Premiers Soins</a></li>
-                        <li><a href="categorie.php?sel=<?php echo "Equipementmedicaux" ?>"> équipement médicaux</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Beaute&Parfums" ?>">Beauté & Parfums</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Santé&Premiers Soins" ?>">Santé & Premiers Soins</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Equipementmedicaux" ?>"> équipement médicaux</a></li>
                     </ul>
 
 
 
-                    <a href="#" class="Acc">Accessoires Mode</a>
 
 
 
                     <a href="#" class="cuisine">Maison & Cuisine</a>
                     <ul class="cuisine-show">
-                        <li><a href="categorie.php?sel=<?php echo "Gros Electroménager" ?>">Gros Electroménager</a></li>
-                        <li><a href="categorie.php?sel=<?php echo "Art, artisanat et couture" ?>">Art, artisanat et couture</a></li>
-                        <li><a href="categorie.php?sel=<?php echo "Maison et ameublement" ?>">Maison et ameublement</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Gros Electroménager" ?>">Gros Electroménager</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Art, artisanat et couture" ?>">Art, artisanat et couture</a></li>
+                        <li><a href="../categorie.php?sel=<?php echo "Maison et ameublement" ?>">Maison et ameublement</a></li>
                     </ul>
                 </div>
             </li>
@@ -131,7 +130,7 @@ $conn = mysqli_connect('localhost', 'root', '', 'projet-ecomm'); ?>
                     <a class="nav-link active" aria-current="page" href="../../Home/home.php">Home</a>
                 </li>
 
-                <li> <a href="../Profile/Profile.php" class="nav-link">
+                <li> <a href="../../Profile/Profile.php" class="nav-link">
                         <?php if ($_SESSION['LoginOrNot']) : echo $_SESSION['username'];
                         endif; ?> </a></li>
                 <li> <a href="../../ABOUTUS/aboutus.php" class="nav-link active"> About us </a> </li>
@@ -206,9 +205,9 @@ $conn = mysqli_connect('localhost', 'root', '', 'projet-ecomm'); ?>
                 while ($row = mysqli_fetch_assoc($rqt)) {
             ?>
                     <div class="col-3" style="height:550px; ">
-                        <a href="panel.php?addPanel=<?php echo $row['id'] ?>" style="position: relative;left: 210px;top:20px"><i class="fal fa-shopping-bag"></i></a>
+                        <a href="../panel.php?addPanel=<?php echo $row['id'] ?>" style="position: relative;left: 210px;top:20px"><i class="fal fa-shopping-bag"></i></a>
 
-                        <a href="../Description/product.php?descri=<?php echo $row['id']; ?>" style="text-decoration:none;color:black;">
+                        <a href="../../Description/product.php?descri=<?php echo $row['id']; ?>" style="text-decoration:none;color:black;">
                             <div style="margin-top:50px;margin-left:20px;">
 
                                 <td><img src="<?php echo $row['imageLink']; ?>">

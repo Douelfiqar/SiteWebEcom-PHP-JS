@@ -26,6 +26,7 @@ if (isset($_POST['login'])) {
               $_SESSION['id']=$result['id'];
                 $_SESSION['LoginOrNot'] = true;
                 header("location: ../HOME/home.php");
+
         }else{
             $_SESSION['disabledAccount'] = false;
         }

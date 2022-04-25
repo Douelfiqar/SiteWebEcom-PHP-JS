@@ -7,18 +7,19 @@ text-align: center;
   border-radius:50%;
 }
 .containerFounder{
-width: 25%;
+width: 15%;
 font-size: 14px;
 padding: 100px;
 text-align: center;
 display: flex;
+margin-left: -90px;
 } 
 .text{
   width: 250px;
 }
 .containerFounder img{
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
   object-fit: contain;
 }
 
